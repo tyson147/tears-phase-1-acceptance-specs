@@ -50,9 +50,9 @@ describe 'homepage sidebar navigation', :type => :feature do
     all(:xpath, "//a[@href='http://tears.org.za/come-and-get-saved-by-the-dogs/']").first.click        
     sleep(10)
     # page.driver.save_screenshot("screen.png")
-    expect(page).to .widget_woo_search
+    # expect(page).to .widget_woo_search
      
-    page.current_url.should == "http://tears.org.za/come-and-get-saved-by-the-dogs/"
+    current_url.should == "http://tears.org.za/come-and-get-saved-by-the-dogs/"
     # current_url.should == "http://41.79.78.80/come-and-get-saved-by-the-dogs/"
   end
 end
